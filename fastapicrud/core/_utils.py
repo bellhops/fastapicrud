@@ -27,9 +27,9 @@ def schema_factory(
     """
 
     fields = {
-        f.alias: (f.annotation, f)
-        for f in schema_cls.model_fields.values()
-        if f.name != pk_field_name
+        name: (field_info.annotation, field_info)
+        for name, field_info in schema_cls.model_fields.items()
+        if name != pk_field_name
     }
 
     name = schema_cls.__name__ + name
