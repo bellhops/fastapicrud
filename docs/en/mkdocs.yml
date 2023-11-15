@@ -1,6 +1,6 @@
 site_name: FastAPI CRUD Router
-repo_url: https://github.com/awtkns/fastapi-crudrouter
-repo_name: awtkns/fastapi-crudrouter
+repo_url: https://github.com/awtkns/fastapicrud
+repo_name: awtkns/fastapicrud
 edit_uri: ''
 
 theme:
@@ -57,7 +57,7 @@ extra:
     property: UA-186315536-1
   social:
   - icon: fontawesome/brands/github-alt
-    link: https://github.com/awtkns/fastapi-crudrouter
+    link: https://github.com/awtkns/fastapicrud
   - icon: fontawesome/brands/linkedin
     link: https://www.linkedin.com/in/awtkns/
   - icon: fontawesome/solid/globe

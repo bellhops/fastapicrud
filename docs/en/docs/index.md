@@ -6,26 +6,26 @@
   <sub>A dynamic FastAPI router that automatically creates routes CRUD for your models</sub>
 </p>
 <p align="center">
-<img alt="Tests" src="https://img.shields.io/github/actions/workflow/status/awtkns/fastapi-crudrouter/.github/workflows/pytest.yml?color=%2334D058" />
-<img alt="Downloads" src="https://img.shields.io/pypi/dm/fastapi-crudrouter?color=%2334D058" />
-<a href="https://pypi.org/project/fastapi-crudrouter" target="_blank">
-    <img src="https://img.shields.io/pypi/v/fastapi-crudrouter?color=%2334D058&label=pypi%20package" alt="Package version">
+<img alt="Tests" src="https://img.shields.io/github/actions/workflow/status/awtkns/fastapicrud/.github/workflows/pytest.yml?color=%2334D058" />
+<img alt="Downloads" src="https://img.shields.io/pypi/dm/fastapicrud?color=%2334D058" />
+<a href="https://pypi.org/project/fastapicrud" target="_blank">
+    <img src="https://img.shields.io/pypi/v/fastapicrud?color=%2334D058&label=pypi%20package" alt="Package version">
 </a>
-<img alt="License" src="https://img.shields.io/github/license/awtkns/fastapi-crudrouter?color=%2334D058" />
+<img alt="License" src="https://img.shields.io/github/license/awtkns/fastapicrud?color=%2334D058" />
 </p>
 <p align="center">
-<img alt="PyPI - Python Version" src="https://img.shields.io/pypi/pyversions/fastapi-crudrouter">
+<img alt="PyPI - Python Version" src="https://img.shields.io/pypi/pyversions/fastapicrud">
 </p>
 
 ---
 
-**Documentation**: <a href="https://fastapi-crudrouter.awtkns.com" target="_blank">https://fastapi-crudrouter.awtkns.com</a>
+**Documentation**: <a href="https://fastapicrud.awtkns.com" target="_blank">https://fastapicrud.awtkns.com</a>
 
-**Source Code**: <a href="https://github.com/awtkns/fastapi-crudrouter" target="_blank">https://github.com/awtkns/fastapi-crudrouter</a>
+**Source Code**: <a href="https://github.com/awtkns/fastapicrud" target="_blank">https://github.com/awtkns/fastapicrud</a>
 
 ---
 Tired of rewriting the same generic CRUD routes? Need to rapidly prototype a feature for a presentation
-or a hackathon? Thankfully, [fastapi-crudrouter](https://github.com/awtkns/fastapi-crudrouter) has your back. As an 
+or a hackathon? Thankfully, [fastapicrud](https://github.com/awtkns/fastapicrud) has your back. As an 
 extension to the APIRouter included with [FastAPI](https://fastapi.tiangolo.com/), the FastAPI CRUDRouter will automatically
 generate and document your CRUD routes for you, all you have to do is pass your model and maybe your database connection.
 
@@ -36,7 +36,7 @@ FastAPI-CRUDRouter is also **lightning fast**, well tested, and production ready
 <div class="termy">
 
 ```console
-$ pip install fastapi-crudrouter
+$ pip install fastapicrud
 
 ---> 100%
 ```
@@ -64,25 +64,25 @@ app.include_router(CRUDRouter(schema=Potato))
 ```
 
 ## Advanced Usage
-fastapi-crudrouter provides a number of features that allow you to get the most out of your automatically generated CRUD
+fastapicrud provides a number of features that allow you to get the most out of your automatically generated CRUD
 routes. Listed below are some highlights.
 
-- Automatic Pagination ([docs](https://fastapi-crudrouter.awtkns.com/pagination/))
-- Ability to Provide Custom Create and Update Schemas ([docs](https://fastapi-crudrouter.awtkns.com/schemas/))
-- Dynamic Generation of Create and Update Schemas ([docs](https://fastapi-crudrouter.awtkns.com/schemas/))
-- Ability to Add, Customize, or Disable Specific Routes ([docs](https://fastapi-crudrouter.awtkns.com/routing/))
-- Native Support for FastAPI Dependencies Injection ([docs](https://fastapi-crudrouter.awtkns.com/dependencies/))
+- Automatic Pagination ([docs](https://fastapicrud.awtkns.com/pagination/))
+- Ability to Provide Custom Create and Update Schemas ([docs](https://fastapicrud.awtkns.com/schemas/))
+- Dynamic Generation of Create and Update Schemas ([docs](https://fastapicrud.awtkns.com/schemas/))
+- Ability to Add, Customize, or Disable Specific Routes ([docs](https://fastapicrud.awtkns.com/routing/))
+- Native Support for FastAPI Dependencies Injection ([docs](https://fastapicrud.awtkns.com/dependencies/))
 
 ## Supported Backends / ORMs
-fastapi-crudrouter supports a number of backends / ORMs. Listed below are the backends currently supported. This list will
+fastapicrud supports a number of backends / ORMs. Listed below are the backends currently supported. This list will
 likely grow in future releases.
 
-- In Memory ([docs](https://fastapi-crudrouter.awtkns.com/backends/memory/))
-- SQLAlchemy ([docs](https://fastapi-crudrouter.awtkns.com/backends/sqlalchemy/))
-- Databases (async) ([docs](https://fastapi-crudrouter.awtkns.com/backends/async/))
-- Ormar (async) ([docs](https://fastapi-crudrouter.awtkns.com/backends/ormar/))
-- Gino (async) ([docs](https://fastapi-crudrouter.awtkns.com/backends/gino/)) 
-- Tortoise ORM  (async) ([docs](https://fastapi-crudrouter.awtkns.com/backends/tortoise/))
+- In Memory ([docs](https://fastapicrud.awtkns.com/backends/memory/))
+- SQLAlchemy ([docs](https://fastapicrud.awtkns.com/backends/sqlalchemy/))
+- Databases (async) ([docs](https://fastapicrud.awtkns.com/backends/async/))
+- Ormar (async) ([docs](https://fastapicrud.awtkns.com/backends/ormar/))
+- Gino (async) ([docs](https://fastapicrud.awtkns.com/backends/gino/)) 
+- Tortoise ORM  (async) ([docs](https://fastapicrud.awtkns.com/backends/tortoise/))
 
 ## OpenAPI Support
 
@@ -91,8 +91,8 @@ likely grow in future releases.
 
 Below are the default routes created by the CRUDRouter shown in the generated OpenAPI documentation.
 
-![OpenAPI Route Overview](https://raw.githubusercontent.com/awtkns/fastapi-crudrouter/master/docs/en/docs/assets/RouteOverview.png)
+![OpenAPI Route Overview](https://raw.githubusercontent.com/awtkns/fastapicrud/master/docs/en/docs/assets/RouteOverview.png)
 
 The CRUDRouter is able to dynamically generate detailed documentation based on the models given to it.
 
-![OpenAPI Route Detail](https://raw.githubusercontent.com/awtkns/fastapi-crudrouter/master/docs/en/docs/assets/RouteDetail.png)
+![OpenAPI Route Detail](https://raw.githubusercontent.com/awtkns/fastapicrud/master/docs/en/docs/assets/RouteDetail.png)

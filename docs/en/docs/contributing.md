@@ -1,4 +1,4 @@
-As an open source package, fastapi-crudrouter accepts contributions from **all members** of the community. If you are interested in the
+As an open source package, fastapicrud accepts contributions from **all members** of the community. If you are interested in the
 contributing, reading the development guidelines below may help you in the process. 😊
 
 ## Github
