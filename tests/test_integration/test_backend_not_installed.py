@@ -4,7 +4,7 @@ import pathlib
 def test_virtualenv(virtualenv):
     file = pathlib.Path(__file__)
     package = file.parent.parent.parent
-    assert (package / "fastapi_crudrouter").exists()
+    assert (package / "fastapicrud").exists()
 
     virtualenv.run(f"pip install -e {package}")
     virtualenv.run(f"python {file}")

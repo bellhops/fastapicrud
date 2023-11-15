@@ -64,19 +64,19 @@ With `dev.requirements.txt` installed above you also install tools to lint, form
 To format the project run: 
 
 ```bash
-black fastapi_crudrouter tests
+black fastapicrud tests
 ```
 
 To check styles, imports, annotations, pep8 etc. run:
 
 ```bash
-flake8 fastapi_crudrouter
+flake8 fastapicrud
 ```
 
 To check static types annotations run: 
 
 ```bash
-mypy fastapi_crudrouter tests
+mypy fastapicrud tests
 ```
 
 ### Documentation

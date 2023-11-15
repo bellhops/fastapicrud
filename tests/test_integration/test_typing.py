@@ -2,7 +2,7 @@ import pathlib
 
 file = pathlib.Path(__file__)
 root_dir = file.parent.parent.parent
-package_src = root_dir / "fastapi_crudrouter"
+package_src = root_dir / "fastapicrud"
 
 
 def test_py_typed_file_exists():
