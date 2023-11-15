@@ -1,6 +1,6 @@
 import pytest
 
-from fastapi_crudrouter.core import CRUDGenerator
+from fastapicrud.core import CRUDGenerator
 
 from tests.implementations import implementations
 from tests.conftest import yield_test_client, label_func

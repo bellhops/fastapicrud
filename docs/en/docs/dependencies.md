@@ -1,4 +1,4 @@
-All the CRUDRouters included with `fastapi_crudrouter` support FastAPI dependency injection.
+All the CRUDRouters included with `fastapicrud` support FastAPI dependency injection.
 
 !!! tip
     Since all CRUDRouter's subclass the [FastAPI APIRouter](https://fastapi.tiangolo.com/tutorial/bigger-applications/?h=+router#apirouter),
@@ -9,7 +9,7 @@ Below is a simple example of how you could use OAuth2 in conjunction with a CRUD
 ```python
 from fastapi import FastAPI, Depends, HTTPException
 from fastapi.security import OAuth2PasswordBearer
-from fastapi_crudrouter import MemoryCRUDRouter
+from fastapicrud import MemoryCRUDRouter
 
 app = FastAPI()
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="auth/token")

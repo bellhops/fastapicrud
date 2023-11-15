@@ -157,7 +157,7 @@ Tired of rewriting the same generic CRUD routes? Need to rapidly prototype a fea
 
 ### Installation
 ```python
-pip install fastapi_crudrouter
+pip install fastapicrud
 ``` 
 
 ### Usage
@@ -165,7 +165,7 @@ Below is a simple example of what the CRUDRouter can do. In just ten lines of co
 ```python
 from pydantic import BaseModel
 from fastapi import FastAPI
-from fastapi_crudrouter import MemoryCRUDRouter as CRUDRouter
+from fastapicrud import MemoryCRUDRouter as CRUDRouter
 
 class Potato(BaseModel):
     id: int

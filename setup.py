@@ -3,7 +3,7 @@ from distutils.util import convert_path
 
 
 def get_version():
-    ver_path = convert_path("fastapi_crudrouter/_version.py")
+    ver_path = convert_path("fastapicrud/_version.py")
     with open(ver_path) as ver_file:
         main_ns = {}
         exec(ver_file.read(), main_ns)
@@ -13,11 +13,7 @@ def get_version():
 setup(
     name="fastapicrud",
     version=get_version(),
-    author="Adam Watkins",
-    author_email="hello@awtkns.com",
     packages=find_packages(exclude=("tests.*", "tests")),
-    url="https://github.com/awtkns/fastapicrud",
-    documentation="https://fastapicrud.awtkns.com/",
     license="MIT",
     description="A dynamic FastAPI router that automatically creates CRUD routes for your models",
     long_description=open("README.md").read(),

@@ -5,7 +5,7 @@ from pydantic import BaseModel
 from sqlalchemy import Column, ForeignKey, Integer
 from sqlalchemy.orm import relationship
 
-from fastapi_crudrouter import SQLAlchemyCRUDRouter
+from fastapicrud import SQLAlchemyCRUDRouter
 from tests import ORMModel, test_router
 from tests.implementations.sqlalchemy_ import _setup_base_app
 

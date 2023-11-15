@@ -12,7 +12,7 @@ your database using your [Tortoise](https://tortoise-orm.readthedocs.io/en/lates
 Below is an example assuming that you have already imported and created all the required models.
 
 ```python
-from fastapi_crudrouter.core.tortoise import TortoiseCRUDRouter
+from fastapicrud.core.tortoise import TortoiseCRUDRouter
 from fastapi import FastAPI
 
 app = FastAPI()
@@ -55,7 +55,7 @@ If you use [Aerich](https://github.com/tortoise/aerich) for database migrations,
 
 import uvicorn as uvicorn
 from fastapi import FastAPI
-from fastapi_crudrouter.core.tortoise import TortoiseCRUDRouter
+from fastapicrud.core.tortoise import TortoiseCRUDRouter
 from tortoise.contrib.fastapi import register_tortoise
 from tortoise.contrib.pydantic import pydantic_model_creator
 from tortoise.models import Model

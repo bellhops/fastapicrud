@@ -3,7 +3,7 @@ import os
 from fastapi import FastAPI
 from tortoise import Model, Tortoise, fields
 
-from fastapi_crudrouter import TortoiseCRUDRouter
+from fastapicrud import TortoiseCRUDRouter
 from tests import (
     Carrot,
     CarrotCreate,

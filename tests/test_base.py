@@ -4,7 +4,7 @@ from typing import Type
 import pytest
 from fastapi import APIRouter, FastAPI
 
-from fastapi_crudrouter import (
+from fastapicrud import (
     GinoCRUDRouter,
     MemoryCRUDRouter,
     OrmarCRUDRouter,
@@ -13,7 +13,7 @@ from fastapi_crudrouter import (
 )
 
 # noinspection PyProtectedMember
-from fastapi_crudrouter.core._base import CRUDGenerator
+from fastapicrud.core._base import CRUDGenerator
 from tests import Potato
 
 

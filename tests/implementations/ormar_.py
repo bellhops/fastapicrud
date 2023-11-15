@@ -6,7 +6,7 @@ import pytest
 import sqlalchemy
 from fastapi import FastAPI
 
-from fastapi_crudrouter import OrmarCRUDRouter
+from fastapicrud import OrmarCRUDRouter
 from tests import CarrotCreate, CarrotUpdate, PAGINATION_SIZE, CUSTOM_TAGS
 
 DATABASE_URL = "sqlite:///./test.db"

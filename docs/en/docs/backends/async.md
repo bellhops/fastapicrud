@@ -12,7 +12,7 @@ Below is a minimal example assuming that you have already imported and created
 all the required models and database connections.
 
 ```python
-from fastapi_crudrouter import DatabasesCRUDRouter
+from fastapicrud import DatabasesCRUDRouter
 from fastapi import FastAPI
 
 app = FastAPI()
@@ -33,7 +33,7 @@ import sqlalchemy
 
 from pydantic import BaseModel
 from fastapi import FastAPI
-from fastapi_crudrouter import DatabasesCRUDRouter
+from fastapicrud import DatabasesCRUDRouter
 
 DATABASE_URL = "sqlite:///./test.db"
 

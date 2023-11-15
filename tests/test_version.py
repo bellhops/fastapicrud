@@ -1,10 +1,10 @@
 def test_version():
-    import fastapi_crudrouter
+    import fastapicrud
 
-    assert type(fastapi_crudrouter.__version__) is str
+    assert type(fastapicrud.__version__) is str
 
 
 def test_version_file():
-    from fastapi_crudrouter import _version
+    from fastapicrud import _version
 
     assert type(_version.__version__) is str

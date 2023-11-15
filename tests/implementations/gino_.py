@@ -1,6 +1,6 @@
 import asyncio
 from fastapi import FastAPI
-from fastapi_crudrouter import GinoCRUDRouter
+from fastapicrud import GinoCRUDRouter
 from gino.ext.starlette import Gino
 from sqlalchemy_utils import create_database, database_exists, drop_database
 from tests import (

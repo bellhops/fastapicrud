@@ -7,7 +7,7 @@ Below is an example assuming that you have already imported and created all the 
 models.
 
 ```python
-from fastapi_crudrouter import OrmarCRUDRouter
+from fastapicrud import OrmarCRUDRouter
 from fastapi import FastAPI
 
 app = FastAPI()
@@ -35,7 +35,7 @@ import sqlalchemy
 import uvicorn
 from fastapi import FastAPI
 
-from fastapi_crudrouter import OrmarCRUDRouter
+from fastapicrud import OrmarCRUDRouter
 
 DATABASE_URL = "sqlite:///./test.db"
 database = databases.Database(DATABASE_URL)

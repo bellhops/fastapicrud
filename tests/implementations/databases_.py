@@ -3,7 +3,7 @@ from fastapi import FastAPI
 from sqlalchemy import Column, Float, Integer, MetaData, String, Table, create_engine
 from sqlalchemy_utils import create_database, database_exists, drop_database
 
-from fastapi_crudrouter import DatabasesCRUDRouter
+from fastapicrud import DatabasesCRUDRouter
 from tests import (
     Carrot,
     CarrotCreate,

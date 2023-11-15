@@ -73,7 +73,7 @@ Below is an example where we are overriding the routes `/potato/{item_id}` and `
 ```python
 from pydantic import BaseModel
 from fastapi import FastAPI
-from fastapi_crudrouter import MemoryCRUDRouter as CRUDRouter
+from fastapicrud import MemoryCRUDRouter as CRUDRouter
 
 class Potato(BaseModel):
     id: int

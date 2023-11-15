@@ -52,7 +52,7 @@ the crud routes you need for any model. A full list of the routes generated can 
 ```python
 from pydantic import BaseModel
 from fastapi import FastAPI
-from fastapi_crudrouter import MemoryCRUDRouter as CRUDRouter
+from fastapicrud import MemoryCRUDRouter as CRUDRouter
 
 class Potato(BaseModel):
     id: int

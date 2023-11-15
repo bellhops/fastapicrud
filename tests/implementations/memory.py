@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 
-from fastapi_crudrouter import MemoryCRUDRouter
+from fastapicrud import MemoryCRUDRouter
 from tests import Potato, Carrot, CarrotUpdate, PAGINATION_SIZE, CUSTOM_TAGS
 
 

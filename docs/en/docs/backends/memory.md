@@ -6,7 +6,7 @@ well suited for rapid bootstrapping and prototyping.
 ```python
 from pydantic import BaseModel
 from fastapi import FastAPI
-from fastapi_crudrouter import MemoryCRUDRouter
+from fastapicrud import MemoryCRUDRouter
 
 class Potato(BaseModel):
     id: int

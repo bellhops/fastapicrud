@@ -23,13 +23,13 @@ if __name__ == "__main__":
     from pydantic import BaseModel
     from fastapi import FastAPI
 
-    import fastapi_crudrouter
+    import fastapicrud
 
     class User(BaseModel):
         id: int
         name: str
         email: str
 
-    router = fastapi_crudrouter.MemoryCRUDRouter(schema=User)
+    router = fastapicrud.MemoryCRUDRouter(schema=User)
     app = FastAPI()
     app.include_router(router)

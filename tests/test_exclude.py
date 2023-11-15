@@ -2,7 +2,7 @@ import random
 import pytest
 
 from fastapi import FastAPI, testclient
-from fastapi_crudrouter import MemoryCRUDRouter
+from fastapicrud import MemoryCRUDRouter
 
 from tests import Potato
 

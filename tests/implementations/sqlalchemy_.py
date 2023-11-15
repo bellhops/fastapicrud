@@ -5,7 +5,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy_utils import create_database, database_exists, drop_database
 
-from fastapi_crudrouter import SQLAlchemyCRUDRouter
+from fastapicrud import SQLAlchemyCRUDRouter
 from tests import (
     Carrot,
     CarrotCreate,

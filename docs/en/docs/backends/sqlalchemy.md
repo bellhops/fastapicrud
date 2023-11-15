@@ -10,7 +10,7 @@ database dependency.
 Below is an example assuming that you have already imported and created all the required models.
 
 ```python
-from fastapi_crudrouter import SQLAlchemyCRUDRouter
+from fastapicrud import SQLAlchemyCRUDRouter
 from fastapi import FastAPI
 
 app = FastAPI()
@@ -38,7 +38,7 @@ from sqlalchemy.orm import sessionmaker
 
 from pydantic import BaseModel
 from fastapi import FastAPI
-from fastapi_crudrouter import SQLAlchemyCRUDRouter
+from fastapicrud import SQLAlchemyCRUDRouter
 
 app = FastAPI()
 engine = create_engine(
